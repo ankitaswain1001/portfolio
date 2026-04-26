@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ankita Kumari Swain</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background: radial-gradient(circle at 20% 30%, #0f172a, #020617);
+color:white;
+}
+
+/* NAV */
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px 60px;
+position:sticky;
+top:0;
+background:rgba(0,0,0,0.3);
+backdrop-filter:blur(10px);
+}
+
+nav h2{
+color:#a78bfa;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+/* HERO */
+.hero{
+text-align:center;
+padding:100px 20px;
+position:relative;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+width:600px;
+height:600px;
+background: radial-gradient(circle, rgba(168,85,247,0.4), transparent);
+top:10%;
+left:50%;
+transform:translateX(-50%);
+filter:blur(120px);
+z-index:-1;
+}
+
+.hero h1{
+font-size:64px;
+background: linear-gradient(90deg,#60a5fa,#a855f7);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+.hero h3{
+color:#94a3b8;
+margin:10px 0;
+}
+
+.hero p{
+max-width:700px;
+margin:10px auto;
+color:#cbd5f5;
+line-height:1.7;
+}
+
+/* BUTTONS */
+.btn{
+padding:12px 25px;
+margin:10px;
+border-radius:10px;
+cursor:pointer;
+text-decoration:none;
+display:inline-block;
+}
+
+.primary{
+background:linear-gradient(90deg,#6366f1,#a855f7);
+color:white;
+box-shadow:0 0 20px rgba(168,85,247,0.5);
+}
+
+.secondary{
+background:transparent;
+border:1px solid #a855f7;
+color:#c084fc;
+}
+
+/* SECTIONS */
+.skills, .projects, .contact{
+text-align:center;
+padding:80px;
+}
+
+/* SKILLS */
+.skills span{
+border:1px solid #a855f7;
+padding:10px 20px;
+border-radius:20px;
+margin:10px;
+display:inline-block;
+color:#c084fc;
+}
+
+/* PROJECTS */
+.project-box{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(12px);
+padding:30px;
+border-radius:20px;
+width:300px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px rgba(168,85,247,0.4);
+}
+
+/* CONTACT */
+.contact a{
+color:#60a5fa;
+display:block;
+margin:10px;
+text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:20px;
+color:#64748b;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+<h2>&lt;/&gt; ANKITA</h2>
+<ul>
+<li><a href="#about" style="color:white;text-decoration:none;">About</a></li>
+<li><a href="#skills" style="color:white;text-decoration:none;">Skills</a></li>
+<li><a href="#projects" style="color:white;text-decoration:none;">Projects</a></li>
+<li><a href="#contact" style="color:white;text-decoration:none;">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="about">
+<h1>Ankita Kumari Swain</h1>
+<h3>Computer Science Student</h3>
+
+<p>I am a first year Computer Science student passionate about technology, coding, and building real-world solutions.</p>
+
+<p>I am currently learning programming, data structures, and web development.</p>
+
+<a href="https://raw.githubusercontent.com/ankitaswain1001/portfolio/main/Ankita_Resume.docx" 
+   download 
+   class="btn primary">
+   Download Resume
+</a>
+
+<a href="https://github.com/ankitaswain1001" target="_blank" class="btn secondary">
+GitHub Profile
+</a>
+</section>
+
+<!-- SKILLS -->
+<section class="skills" id="skills">
+<h2>Skills</h2>
+
+<span>C</span>
+<span>Python</span>
+<span>HTML</span>
+<span>CSS</span>
+<span>Git</span>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+<h2>Projects</h2>
+
+<div class="project-box">
+
+<div class="card">
+<h3>Smart Rider</h3>
+<p>Explored a real-world JavaScript project.</p>
+<a href="https://github.com/ankitaswain1001/Smart-Rider" target="_blank" class="btn secondary">View Code</a>
+</div>
+
+<div class="card">
+<h3>AI Symptom Checker</h3>
+<p>Worked on a Python-based health prediction system.</p>
+<a href="https://github.com/ankitaswain1001/AI-Symptom-Checker" target="_blank" class="btn secondary">View Code</a>
+</div>
+
+<div class="card">
+<h3>Kalpana App</h3>
+<p>Frontend-based JavaScript application.</p>
+<a href="https://github.com/ankitaswain1001/Kalpanaapp" target="_blank" class="btn secondary">View Code</a>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+<h2>Contact</h2>
+
+<a href="mailto:ankitaswain1001@gmail.com">
+📧 ankitaswain1001@gmail.com
+</a>
+
+<a href="#">
+📱 +91 7760617347
+</a>
+
+<a href="https://github.com/ankitaswain1001" target="_blank">
+💻 github.com/ankitaswain1001
+</a>
+
+</section>
+
+<footer>
+© 2026 Ankita Kumari Swain
+</footer>
+
+</body>
+</html>
